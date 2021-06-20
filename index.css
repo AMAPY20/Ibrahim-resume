@@ -4,7 +4,7 @@
 :root{
     --primary-color:#0067de;
     --second-color:#e5f1ff;
-    --theard-color: rgb(40, 40, 40);
+    --theard-color: #282828;
     --fourth-color:#fff;
     --fiveth-color:#707070;
 }
@@ -101,6 +101,7 @@ body{
 .title > ul li{
     margin-left: 50px;
     line-height: 2;
+    color: var(--fiveth-color);
 }
 
 .title ul li span{
@@ -113,6 +114,7 @@ body{
     text-align: justify;
     font-size: 14px;
     margin-left: 48px;
+    color: var(--fiveth-color);
 }
 
 .title .head{
@@ -158,21 +160,13 @@ body{
     position: relative;
     font-size: 50px;
     font-weight: 400;
-    
+    color: var(--theard-color);
 }
 
-/* .profileText::after{
-    content: "";
-    border-right: 10px solid var(--primary-color) ;
-    border-radius: 15px;
-    position: absolute;
-    left: 20px;
-    width: 10px;
-} */
 .profileText h2{
     font-weight: 400;
     line-height: 1;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 .profileText h2 span{
     color: var(--primary-color);
@@ -190,7 +184,7 @@ body{
 }
 
 .experience ul {
-    font-size: 17px;
+    font-size: 16px;
     position: relative;
 }
 
@@ -200,6 +194,11 @@ body{
 }
 .experience ul li:first-child{
     padding-left:10px ;
+    color: var(--theard-color);
+}
+
+.experience ul li:first-child i{
+    color: var(--fiveth-color);
 }
 .experience ul li + li{
     padding-left: 30px;
@@ -288,41 +287,13 @@ body{
     transform: translateY(-3px);
 }
 
-.interests{
-    margin-top: 20px;
-}
-
-.interests h2{
-    color: var(--primary-color);
-    margin-top: 25px;
-    font-size: 28px;
-}
-
-.interests ul{
-    display: flex;
-    justify-content: space-between;
-}
-
-.interests ul li{
-    font-weight: bold;
-    color: var(--fiveth-color);
-    line-height: 3;
-}
-.language h2{
-    color: var(--primary-color);
-    margin-top: 25px;
-    font-size: 28px;
-}
-
-.language ul li{
-    font-size: 17px;
+.skills .add-info li{
+    margin-bottom: 10px;
     color: var(--fiveth-color);
 }
-
-.language ul li span{
-    color: #000;
+.skills .add-info li i{
+    color: var(--primary-color);
 }
-
 @media (max-width: 1000px){
 
     .container{
@@ -423,6 +394,12 @@ body{
 
     .profileText h3 {
         font-size: 2rem;
+    }
+    .skills .prog-holder h4 {
+        font-size: 17px;
+    }
+    .skills h2{
+        font-size: 26px;
     }
 
     .download-social{
